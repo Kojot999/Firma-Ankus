@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss";
-import ArrowTop from "../../img/ArrowTop.png";
+import { ScrollToTop } from "./ScrollTop/ScrollTop";
 
 export const Footer = () => {
   return (
@@ -17,7 +17,7 @@ export const Footer = () => {
         <p>Firma Ankus @ andrzej.ankus@wp.pl</p>
         <p>Strona Przygotowana przez EmesClick.com</p>
       </div>
-      <img alt="" src={ArrowTop} />
+      <ScrollToTop />
     </div>
   );
 };

@@ -1,0 +1,28 @@
+.NavMobile {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .NavList {
+    z-index: 2;
+
+    li {
+      margin-top: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.TopViews {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: scroll;
+}
+.section {
+  scroll-snap-align: start;
+}

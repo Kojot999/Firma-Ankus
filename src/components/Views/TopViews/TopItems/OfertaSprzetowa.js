@@ -5,7 +5,7 @@ export const OfertaSprzetowa = () => {
   return (
     <div className={styles.OfertaSprzetowa}>
       <div>
-        <img src={Oferta1} />
+        <img alt="" src={Oferta1} />
       </div>
     </div>
   );

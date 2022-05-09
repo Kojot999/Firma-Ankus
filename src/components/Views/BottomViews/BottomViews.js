@@ -5,7 +5,7 @@ export const BottomViews = () => {
   return (
     <div className={styles.BottomViews}>
       <div>
-        <img src={BottomViewsIMG} />
+        <img alt="" src={BottomViewsIMG} />
       </div>
     </div>
   );
