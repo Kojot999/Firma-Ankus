@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.scss";
 import { NavBurger } from "./NavBurger/NavBurger";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -8,7 +9,9 @@ export const NavBar = () => {
         <NavBurger />
       </div>
       <div>
-        <h1>FIRMA ANKUS</h1>
+        <NavLink to="/">
+          <h1>FIRMA ANKUS</h1>
+        </NavLink>
       </div>
     </div>
   );

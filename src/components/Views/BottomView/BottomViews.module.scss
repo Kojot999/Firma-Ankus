@@ -1,0 +1,50 @@
+.dots {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  margin-top: -35px;
+  padding: 0;
+  li {
+    &:global(.slick-active) {
+      button {
+        opacity: 1;
+      }
+    }
+    button {
+      color: transparent;
+      background-color: #fce300;
+      border-radius: 50%;
+      border: none;
+      opacity: 0.5;
+      cursor: pointer;
+      margin-inline: 7px;
+    }
+  }
+}
+.tile {
+  position: relative;
+
+  .butt {
+    position: absolute;
+    z-index: 5;
+    margin-top: -85px;
+    width: 100%;
+    button {
+      z-index: 5;
+      border: 5px;
+      background-color: #fce300;
+      border-radius: 10px;
+      height: 45px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 30px;
+    }
+  }
+  a {
+    display: block;
+  }
+}
+ul {
+  list-style: none;
+}
