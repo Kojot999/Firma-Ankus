@@ -1,6 +1,9 @@
 import oferta1 from "../img/Oferta1.jpg";
 import transport1 from "../img/Transport1.jpg";
 import Podwykonastwo1 from "../img/Podwykonastwo1.jpg";
+import DrogaIMG from "../img/DrogaIMG.jpg";
+import PraceZiemne from "../img/PraceZiemne.webp";
+import Rozbiórki from "../img/Rozbiórki.webp";
 
 export const ROUTES = [
   {
@@ -9,8 +12,8 @@ export const ROUTES = [
     img: oferta1,
   },
   {
-    name: "Podwykonawstwo",
-    path: "/oferta#podwykonawstwo",
+    name: "Realizacje",
+    path: "/oferta#realizacje",
     img: Podwykonastwo1,
   },
   {
@@ -35,5 +38,19 @@ export const LINKS = [
   {
     name: "OFERTA",
     path: "/oferta",
+  },
+];
+export const LINKSREALIZACJE = [
+  {
+    name: "DROGI",
+    img: DrogaIMG,
+  },
+  {
+    name: "PRACE ZIEMNE",
+    img: PraceZiemne,
+  },
+  {
+    name: "ROZBIÓRKI",
+    img: Rozbiórki,
   },
 ];

@@ -4,13 +4,16 @@
   align-items: center;
 
   .section1,
-  .section2,
-  .section3 {
+  .section2 {
     box-shadow: 0px 10px 100px -43px rgba(66, 68, 90, 1);
     border-radius: 50px;
     max-width: 380px;
     padding: 5px 25px;
     margin: 15px;
+    .DrogaIMG {
+      height: 200px;
+      width: 150px;
+    }
   }
   p {
     font-size: 18px;

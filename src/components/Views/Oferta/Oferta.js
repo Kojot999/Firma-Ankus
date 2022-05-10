@@ -1,4 +1,5 @@
 import styles from "./Oferta.module.scss";
+import { Realizacje } from "./OfertaItems/Realizacje";
 
 export const Oferta = () => {
   return (
@@ -61,19 +62,7 @@ export const Oferta = () => {
           </li>
         </ul>
       </div>
-      <div id="podwykonawstwo" className={styles.section3}>
-        <h2>PODWYKONAWSTWO</h2>
-        <ul>
-          <li>
-            <p>
-              Podejmujemy się także prac jako Podwykonawcy prac ziemno-drogowych
-            </p>
-          </li>
-          <li>
-            <p>Jesteśmy Zarejstrowanie w Systemie BDO</p>
-          </li>
-        </ul>
-      </div>
+      <Realizacje />
     </div>
   );
 };
