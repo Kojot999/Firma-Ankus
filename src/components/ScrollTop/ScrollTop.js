@@ -1,5 +1,5 @@
 import styles from "./ScrollTop.module.scss";
-import ArrowTop from "../../../img/ArrowTop.png";
+import ArrowTop from "../../img/ArrowTop.png";
 
 export const ScrollToTop = () => {
   const goToTop = () => {
@@ -10,7 +10,7 @@ export const ScrollToTop = () => {
   };
 
   return (
-    <div className={styles.pos} onClick={goToTop}>
+    <div className={styles.ScrollToTop} onClick={goToTop}>
       <img alt="" src={ArrowTop} className={styles.icon} />
     </div>
   );

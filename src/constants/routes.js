@@ -19,3 +19,21 @@ export const ROUTES = [
     img: transport1,
   },
 ];
+export const LINKS = [
+  {
+    name: "START",
+    path: "/",
+  },
+  {
+    name: "KONTAKT",
+    path: "/about#kontakt",
+  },
+  {
+    name: "FIRMA",
+    path: "/about#firma",
+  },
+  {
+    name: "OFERTA",
+    path: "/oferta",
+  },
+];

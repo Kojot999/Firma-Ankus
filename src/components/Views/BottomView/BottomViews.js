@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ROUTES } from "../../../constants/routes";
-import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 export const BottomViews = () => {
   const settings = {
@@ -23,12 +23,13 @@ export const BottomViews = () => {
       <Slider {...settings}>
         {ROUTES.map(({ name, path, img }) => (
           <div className={styles.tile}>
-            <NavLink to={path}>
+            <NavHashLink to={path}>
+              <div className={styles.overlay}></div>
               <img alt={name} src={img} />
               <div className={styles.butt}>
                 <button>{name}</button>
               </div>
-            </NavLink>
+            </NavHashLink>
           </div>
         ))}
       </Slider>

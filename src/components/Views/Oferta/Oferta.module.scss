@@ -1,29 +1,45 @@
 .oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .section1,
   .section2,
   .section3 {
     box-shadow: 0px 10px 100px -43px rgba(66, 68, 90, 1);
     border-radius: 50px;
-    padding: 30px;
-    margin: 20px;
+    max-width: 380px;
+    padding: 5px 25px;
+    margin: 15px;
   }
   p {
     font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
   }
   ul {
     list-style: none;
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin-top: 0;
   }
   h2 {
     background-color: #fce30091;
     border-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    margin-bottom: 0;
   }
   li {
     background: #efefef;
     border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    &:last-of-type {
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
   }
 }

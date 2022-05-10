@@ -4,22 +4,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 2;
+  top: 70px;
   img {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 1;
   }
-  .NavList {
+  a {
     z-index: 2;
-
-    p {
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-    }
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    position: relative;
+    top: -90px;
   }
 }

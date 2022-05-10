@@ -2,13 +2,21 @@
   background-color: #303030;
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
   text-align: left;
   padding-top: 15px;
-  padding-left: 10vw;
   padding-bottom: 10px;
-  padding-right: 10px;
+
+  .wrapper {
+    h2 {
+      margin: 0px;
+      padding-left: 20px;
+    }
+  }
+  img {
+    width: 45px;
+  }
+
   h2 {
     margin: 0px;
   }
@@ -16,7 +24,22 @@
     list-style: none;
     padding: 0;
   }
+
   p {
     max-width: 200px;
+  }
+}
+.footerPhone {
+  li {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+  }
+
+  img {
+    width: 35px;
+  }
+  a {
+    color: white;
   }
 }

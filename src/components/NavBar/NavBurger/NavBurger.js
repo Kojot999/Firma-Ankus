@@ -1,15 +1,23 @@
 import styles from "./NavBurger.module.scss";
-import NavBurgerIcon from "../../../img/NavBurgerIcon.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavMobile } from "../NavMobile/NavMobile";
+import Hamburger from "hamburger-react";
 
 export const NavBurger = () => {
   const [showMenu, setShowMenu] = useState(false);
+  useEffect(() => {
+    if (showMenu === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [showMenu]);
+  const closeMenu = () => setShowMenu(false);
 
   return (
     <nav className={styles.NavBurger}>
-      <img alt="" src={NavBurgerIcon} onClick={() => setShowMenu(!showMenu)} />
-      {showMenu && <NavMobile />}
+      <Hamburger toggled={showMenu} toggle={setShowMenu} />
+      {showMenu && <NavMobile closeMenu={closeMenu} />}
     </nav>
   );
 };
