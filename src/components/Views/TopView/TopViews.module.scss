@@ -12,7 +12,7 @@
     z-index: 1;
     max-width: 420px;
     font-size: 18px;
-    top: 250px;
+    top: 200px;
     text-align: left;
     .linkWrapper {
       display: flex;
@@ -27,9 +27,12 @@
       img {
         width: 35px;
       }
+      @media only all and (max-width: 720px) {
+        display: none;
+      }
     }
     h1 {
-      color: #black;
+      color: black;
       margin: 0;
       font-size: 38px;
       @media only all and (max-width: 720px) {
@@ -79,7 +82,7 @@
     }
   }
 }
-.imgDeskopt {
+.imgDesktop {
   @media only all and (max-width: 720px) {
     display: none;
   }
