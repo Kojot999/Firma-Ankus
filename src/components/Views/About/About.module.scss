@@ -1,7 +1,8 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media only all and (min-width: 920px) {
+    display: flex;
+    align-items: center;
+  }
   .section1 {
     font-size: 25px;
     font-weight: bold;
@@ -9,13 +10,17 @@
     border-radius: 50px;
     max-width: 380px;
     padding: 25px;
-    margin: 15px;
+    margin: 15px auto;
+    @media only all and (min-width: 920px) {
+      max-width: 800px;
+      font-size: 18px;
+    }
     img {
       width: 55px;
     }
     li {
       display: flex;
-      margin: 15px;
+      margin-block: 15px;
       align-items: center;
     }
     a {
@@ -33,7 +38,11 @@
     border-radius: 50px;
     max-width: 380px;
     padding: 25px;
-    margin: 15px;
+    margin: 15px auto;
+    @media only all and (min-width: 920px) {
+      max-width: 800px;
+      font-size: 18px;
+    }
     h2 {
       background-color: #fce30091;
       border-radius: 30px;
@@ -41,8 +50,13 @@
     h4 {
       padding: 20px;
     }
-    .mapContainer {
-      .map {
+
+    .wrapper {
+      @media only all and (min-width: 920px) {
+        display: flex;
+      }
+      .mapContainer {
+        min-width: 300px;
       }
     }
   }

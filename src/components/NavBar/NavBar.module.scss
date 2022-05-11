@@ -5,12 +5,33 @@
   height: 70px;
   margin-bottom: 4px;
   font-size: 17px;
+  font-weight: bold;
   h1 {
     margin-left: 20px;
     padding-bottom: 5px;
+    @media only all and (min-width: 920px) {
+      margin-left: 100px;
+    }
   }
   a {
     text-decoration: none;
     color: black;
+  }
+  .NavLogo {
+    @media only all and (min-width: 920px) {
+      min-width: 40%;
+    }
+  }
+  .NavBarBurger {
+    @media only all and (min-width: 920px) {
+      display: none;
+    }
+  }
+  .NavBarDesktop {
+    width: 60%;
+
+    @media only all and (max-width: 920px) {
+      display: none;
+    }
   }
 }

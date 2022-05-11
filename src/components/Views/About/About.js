@@ -30,14 +30,16 @@ export const About = () => {
         </div>
         <div id="firma" className={styles.section2}>
           <h2>FIRMA</h2>
-          <h4>
-            Jesteśmy Firmą z Dolnego Śląska świadczymy usługi
-            buowlano-transportowe ponadto podejmujemy się wykonastwa robót
-            ziemnych jak i drogowych. Posiadamy także sklep z częściami do
-            maszyn Rolniczych.
-          </h4>
-          <div className={styles.mapContainer}>
-            <Map className={styles.map} />
+          <div className={styles.wrapper}>
+            <h4>
+              Jesteśmy Firmą z Dolnego Śląska świadczymy usługi
+              buowlano-transportowe ponadto podejmujemy się wykonastwa robót
+              ziemnych jak i drogowych. Posiadamy także sklep z częściami do
+              maszyn Rolniczych.
+            </h4>
+            <div className={styles.mapContainer}>
+              <Map />
+            </div>
           </div>
         </div>
       </div>

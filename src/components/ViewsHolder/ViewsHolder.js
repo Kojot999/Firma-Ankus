@@ -7,7 +7,7 @@ import { About } from "../Views/About/About";
 
 export const ViewsHolder = () => {
   return (
-    <div className={styles.Holder}>
+    <div className={styles.holder}>
       <Routes>
         <Route
           exact

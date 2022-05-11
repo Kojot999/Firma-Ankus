@@ -3,7 +3,8 @@
   border-radius: 50px;
   max-width: 380px;
   padding: 5px 25px;
-  margin: 15px;
+  margin: 15px auto;
+
   .tile {
     position: relative;
     max-height: 280px;
@@ -18,9 +19,7 @@
         color: white;
       }
     }
-    a {
-      display: block;
-    }
+
     .overlay {
       position: absolute;
       width: 100%;

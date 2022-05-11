@@ -32,6 +32,9 @@
     z-index: 5;
     margin-top: -85px;
     width: 100%;
+    @media only all and (min-width: 720px) {
+      margin-top: -55px;
+    }
     button {
       z-index: 5;
       border: 5px;

@@ -6,8 +6,20 @@
   text-align: left;
   padding-top: 15px;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   .wrapper {
+    @media only all and (min-width: 720px) {
+      display: flex;
+    }
+    .wrapperData {
+      @media only all and (min-width: 720px) {
+        margin-right: 40px;
+      }
+    }
+  }
+  .wrapperPhone {
     h2 {
       margin: 0px;
       padding-left: 20px;
@@ -28,18 +40,18 @@
   p {
     max-width: 200px;
   }
-}
-.footerPhone {
-  li {
-    display: flex;
-    margin: 15px;
-    align-items: center;
-  }
+  .footerPhone {
+    li {
+      display: flex;
+      margin: 15px;
+      align-items: center;
+    }
 
-  img {
-    width: 35px;
-  }
-  a {
-    color: white;
+    img {
+      width: 35px;
+    }
+    a {
+      color: white;
+    }
   }
 }
