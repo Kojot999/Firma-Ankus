@@ -34,7 +34,7 @@ export const BottomViews = () => {
     <div className={styles.slider}>
       <Slider {...settings}>
         {ROUTES.map(({ name, path, img }) => (
-          <div className={styles.tile}>
+          <div key={name} className={styles.tile}>
             <NavHashLink to={path}>
               <div className={styles.overlay}></div>
               <img alt={name} src={img} />

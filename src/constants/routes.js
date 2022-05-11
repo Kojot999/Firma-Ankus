@@ -54,3 +54,18 @@ export const LINKSREALIZACJE = [
     img: Rozbiórki,
   },
 ];
+export const LINKSDESKTOP = [
+  {
+    name: "START",
+    path: "/",
+  },
+
+  {
+    name: "O NAS",
+    path: "/about#firma",
+  },
+  {
+    name: "OFERTA",
+    path: "/oferta",
+  },
+];

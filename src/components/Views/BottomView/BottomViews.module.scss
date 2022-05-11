@@ -27,6 +27,9 @@
 }
 .tile {
   position: relative;
+  img {
+    width: 100%;
+  }
   .butt {
     position: absolute;
     z-index: 5;

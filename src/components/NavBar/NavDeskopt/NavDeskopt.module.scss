@@ -8,4 +8,12 @@
     margin-inline: 30px;
     padding-top: 20px;
   }
+  a:hover {
+    color: #fce300;
+    text-decoration: underline;
+  }
+}
+.selected {
+  background: #fce300;
+  padding-inline: 15px;
 }
