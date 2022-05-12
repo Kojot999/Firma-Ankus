@@ -32,7 +32,7 @@
       }
     }
     h1 {
-      color: black;
+      color: white;
       margin: 0;
       font-size: 38px;
       @media only all and (max-width: 720px) {
@@ -47,7 +47,6 @@
     }
     h2 {
       color: #ebff07;
-      background: black;
       margin: 0;
       font-size: 26px;
       @media only all and (max-width: 400px) {
@@ -57,11 +56,14 @@
         font-size: 40px;
       }
     }
+    h2 span {
+      background: black;
+    }
     h3 {
-      color: white;
+      color: black;
       margin: 0;
       font-size: 22px;
-      text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+      text-shadow: 4px 4px 8px rgb(160, 160, 160);
       @media only all and (max-width: 400px) {
         font-size: 22px;
       }

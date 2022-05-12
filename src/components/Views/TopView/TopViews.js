@@ -12,7 +12,9 @@ export const TopViews = () => {
         <img alt="" src={TopViewsIMG2} className={styles.imgDesktop} />
         <div className={styles.wrapper}>
           <h1>USŁUGI</h1>
-          <h2>BUDOWLANO-TRANSPORTOWE,</h2>
+          <h2>
+            <span>BUDOWLANO-TRANSPORTOWE,</span>
+          </h2>
           <h3>Oraz wykonawstwo robót ziemnych i drogowych.</h3>
           <div className={styles.linkWrapper}>
             <img alt="" src={Phone} />

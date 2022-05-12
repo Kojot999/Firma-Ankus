@@ -4,10 +4,12 @@
   max-width: 380px;
   padding: 5px 25px;
   margin: 15px auto;
-
   .tile {
     position: relative;
     max-height: 280px;
+    img {
+      width: 100%;
+    }
     .text {
       position: absolute;
       z-index: 5;

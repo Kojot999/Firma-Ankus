@@ -15,9 +15,11 @@
   }
   a {
     text-decoration: none;
-    color: black;
   }
   .NavLogo {
+    h1 {
+      color: black;
+    }
     @media only all and (min-width: 920px) {
       min-width: 40%;
     }
