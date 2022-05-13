@@ -32,8 +32,8 @@ export const About = () => {
           <h2>FIRMA</h2>
           <div className={styles.wrapper}>
             <h4>
-              Jesteśmy Firmą z Dolnego Śląska świadczymy usługi
-              buowlano-transportowe ponadto podejmujemy się wykonastwa robót
+              Jesteśmy Firmą z Dolnego Śląska, świadczymy usługi
+              budowlano-transportowe, ponadto podejmujemy się wykonastwa robót
               ziemnych jak i drogowych. Posiadamy także sklep z częściami do
               maszyn Rolniczych.
             </h4>
