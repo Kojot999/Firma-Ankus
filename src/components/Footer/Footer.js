@@ -17,7 +17,6 @@ export const Footer = () => {
           </div>
           <div>
             <p>Firma Ankus @ andrzej.ankus@wp.pl</p>
-            <p>Strona Przygotowana przez EmesClick.com</p>
           </div>
         </div>
       </div>

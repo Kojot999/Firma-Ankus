@@ -19,7 +19,7 @@ export const Oferta = () => {
             <p>NACZEPA WYWROTKA 26TON (5szt)</p>
           </li>
           <li>
-            <p>TRANSPORT NISKODOWOZIOWY 26TON</p>
+            <p>TRANSPORT NISKOPODWOZIOWY 26TON</p>
             <span></span>
           </li>
         </ul>

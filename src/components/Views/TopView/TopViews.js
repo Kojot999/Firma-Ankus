@@ -8,8 +8,12 @@ export const TopViews = () => {
   return (
     <div>
       <div className={styles.TopViews}>
-        <img alt="" src={TopViewsIMG} className={styles.imgMobile} />
-        <img alt="" src={TopViewsIMG2} className={styles.imgDesktop} />
+        <div className={styles.imgMobileWrapper}>
+          <img alt="" src={TopViewsIMG} className={styles.imgMobile} />
+        </div>
+        <div className={styles.imgDesktopWrapper}>
+          <img alt="" src={TopViewsIMG2} className={styles.imgDesktop} />
+        </div>
         <div className={styles.wrapper}>
           <h1>USŁUGI</h1>
           <h2>

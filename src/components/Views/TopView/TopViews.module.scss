@@ -60,10 +60,10 @@
       background: black;
     }
     h3 {
-      color: black;
+      color: white;
       margin: 0;
       font-size: 22px;
-      text-shadow: 4px 4px 8px rgb(160, 160, 160);
+
       @media only all and (max-width: 400px) {
         font-size: 22px;
       }
@@ -92,5 +92,31 @@
 .imgMobile {
   @media only all and (min-width: 720px) {
     display: none;
+  }
+}
+.imgDesktopWrapper {
+  position: relative;
+  &:before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(
+      345.66deg,
+      rgba(30, 35, 41, 0.74) 29.55%,
+      rgba(0, 0, 0, 0) 131.08%
+    );
+  }
+}
+.imgMobileWrapper {
+  position: relative;
+  &:before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(
+      345.66deg,
+      rgba(30, 35, 41, 0.74) 29.55%,
+      rgba(0, 0, 0, 0) 131.08%
+    );
   }
 }
