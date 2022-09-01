@@ -12,15 +12,15 @@ export const About = () => {
           <ul>
             <li>
               <img alt="" src={phoneIcon} />
-              <a href="tel:+728 868 711">+728 868 711</a>
+              <a href="tel:+696 068 905">Andrzej Ankus +696 068 905</a>
             </li>
             <li>
               <img alt="" src={phoneIcon} />
-              <a href="tel:+605 144 254">+605 144 254</a>
+              <a href="tel:+605 144 254">Adam Ankus +605 144 254</a>
             </li>
             <li>
               <img alt="" src={phoneIcon} />
-              <a href="tel:+72 605 78 89">+72 605 78 89</a>
+              <a href="tel:+72 605 78 89">Biuro +72 605 78 89</a>
             </li>
             <li>
               <img alt="" src={mailIcon} />
