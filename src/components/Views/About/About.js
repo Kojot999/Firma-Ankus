@@ -16,7 +16,7 @@ export const About = () => {
             </li>
             <li>
               <img alt="" src={phoneIcon} />
-              <a href="tel:+605 144 254">Adam Ankus +605 144 254</a>
+              <a href="tel:+605 144 254">Adam Ankus +605 144 251</a>
             </li>
             <li>
               <img alt="" src={phoneIcon} />
