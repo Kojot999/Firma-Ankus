@@ -1,0 +1,249 @@
+.contact-page {
+  --bg: #151515;
+  --panel: rgba(255, 255, 255, 0.04);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.7);
+  --line: rgba(255, 255, 255, 0.12);
+  --accent: #ffd60a;
+
+  background:
+    radial-gradient(
+      900px 260px at 15% 0%,
+      rgba(255, 214, 10, 0.1),
+      transparent 55%
+    ),
+    radial-gradient(
+      700px 240px at 85% 10%,
+      rgba(0, 180, 216, 0.08),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #1a1a1a 0%, var(--bg) 100%);
+
+  color: var(--text);
+  padding: 28px 16px 40px;
+
+  .section {
+    max-width: 1100px;
+    margin: 0 auto 18px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    border-radius: 18px;
+    padding: 18px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 56px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+    }
+  }
+
+  .contactList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+
+  .contactList li {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 12px;
+    align-items: center;
+
+    padding: 12px 12px;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    transition:
+      transform 160ms ease,
+      background 160ms ease,
+      border-color 160ms ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.035);
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-1px);
+    }
+  }
+
+  .iconWrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 214, 10, 0.18),
+      rgba(255, 255, 255, 0.03)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    img {
+      width: 24px;
+      height: 24px;
+      opacity: 0.95;
+      border-radius: 50%;
+    }
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .hours {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.18);
+  }
+
+  .hours h3 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: var(--text);
+    letter-spacing: 0.3px;
+    position: relative;
+    padding-left: 14px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(255, 214, 10, 0.12);
+    }
+  }
+
+  .hoursList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+  }
+
+  .hoursList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 12px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .hoursList .day {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .hoursList .time {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .hoursList .time.muted {
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+  }
+
+  .hoursNote {
+    margin: 12px 0 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    display: grid;
+    gap: 14px;
+  }
+
+  .aboutCard,
+  .mapCard {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 16px;
+  }
+
+  .aboutCard h4 {
+    margin: 0;
+    color: var(--muted);
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 14.5px;
+  }
+
+  .mapHeader {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 12px;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(255, 214, 10, 0.12);
+    }
+  }
+
+  .mapFrame {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+      display: block;
+    }
+  }
+
+  .mapLink {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(255, 214, 10, 0.95);
+
+    &:hover {
+      color: #ffe066;
+    }
+  }
+}

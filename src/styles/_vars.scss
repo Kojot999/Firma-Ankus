@@ -1,0 +1,119 @@
+// ----------------------------
+//	TOOLS & UTILS
+// ----------------------------
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// ----------------------------
+//	COLORS
+// ----------------------------
+
+$void: #000;
+$light-void: #121212;
+$light-orange: #eb5757;
+$black: #1d1d1b;
+$light-gray: #777777;
+$gray: #50504f;
+$dark-gray: #2a2c2c;
+$very-dark-gray: #1e1e1e;
+$blue: #00bdff;
+$yellow: #f6b900;
+$white: #fff;
+$red: #E5451F;
+
+$mainGradient: linear-gradient(85deg, #2a2c2c 0.65%, #000 110.02%);
+$mainGradientReversed: linear-gradient(180deg, #2a2c2c 0.65%, #000 110.02%);
+$mainGradientVertical: linear-gradient(to bottom, #2a2c2c 0.65%, #000 110.02%);
+$gradientRight: linear-gradient(83deg, #2A2C2C 13.09%, #000 79.69%);
+$gradientLeft: linear-gradient(263deg, #2A2C2C 13.09%, #000 79.69%);
+
+// legacy
+$lightorange: #ff0000;
+$darkorange: #ff0000;
+$orange: #ff0000;
+
+// z-index
+$zindex-health-warning: 90;
+$zindex-nav: 100;
+$zindex-draver: 110;
+
+$skeletonStart: hsl(200, 20%, 70%);
+$skeletonEnd: hsl(200, 20%, 95%);
+// ----------------------------
+//	EASING
+// ----------------------------
+
+$CubicEaseIn: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$CubicEaseOut: cubic-bezier(0.165, 0.84, 0.44, 1);
+$CubicEaseInOut: cubic-bezier(0.645, 0.045, 0.355, 1);
+$QuadEaseIn: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$QuadEaseOut: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$QuadEaseInOut: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$ExpoEaseOut: cubic-bezier(0.19, 1, 0.22, 1);
+$ExpoEaseInOut: cubic-bezier(1, 0, 0, 1);
+
+// ----------------------------
+//	Break Points
+// ----------------------------
+
+$screen-vHD: 720px;
+$screen-XGA: 1020px;
+$screen-HD: 1280px;
+$screen-WXGA: 1420px;
+$screen-UXGA: 1590px;
+$screen-FHD: 1910px;
+$screen-QHD: 2440px;
+
+$clipPathCorner: polygon(
+  0 0,
+  100% 0,
+  100% calc(100% - 16px),
+  calc(100% - 16px) 100%,
+  0 100%
+);
+
+@mixin vHD {
+  @media screen and (min-width: $screen-vHD) {
+    @content;
+  }
+}
+
+@mixin XGA {
+  @media screen and (min-width: $screen-XGA) {
+    @content;
+  }
+}
+
+@mixin HD {
+  @media screen and (min-width: $screen-HD) {
+    @content;
+  }
+}
+
+@mixin WXGA {
+  @media screen and (min-width: $screen-WXGA) {
+    @content;
+  }
+}
+
+@mixin UXGA {
+  @media screen and (min-width: $screen-UXGA) {
+    @content;
+  }
+}
+
+@mixin FHD {
+  @media screen and (min-width: $screen-FHD) {
+    @content;
+  }
+}
+
+@mixin QHD {
+  @media screen and (min-width: $screen-QHD) {
+    @content;
+  }
+}

@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: $main;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+a,
+textarea {
+  font-family: $main;
+  color: inherit;
+}
+
+button {
+  all: unset;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  appearance: none;
+  font-family: $main;
+}
+
+.app-wrapper {
+  position: relative;
+  overflow-x: clip;
+
+  height: 100vh;
+  height: 100dvh;
+  background: $black;
+
+  @include XGA {
+    background: #000;
+    display: block;
+  }
+
+  @include FHD {
+    max-width: 1920px;
+    margin-inline: auto;
+  }
+}
+
+main {
+  margin-inline: auto;
+  height: 100%;
+
+  & > div {
+    height: initial;
+
+    @include XGA {
+      height: initial;
+    }
+
+    & > section {
+      height: 100%;
+    }
+  }
+
+  @include XGA {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
