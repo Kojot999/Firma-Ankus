@@ -2,14 +2,18 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import path from "path";
+import { vitePrerenderPlugin } from "vite-prerender-plugin";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), svgr()],
-  server: {
-    port: 3000,
-    host: true,
-  },
+  plugins: [
+    react(),
+    svgr(),
+    vitePrerenderPlugin({
+      renderTarget: "#root",
+      prerenderScript: path.resolve(__dirname, "src/prerender.jsx"),
+      additionalPrerenderRoutes: ["/", "/oferta", "/kontakt"],
+    }),
+  ],
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "./src/assets"),
